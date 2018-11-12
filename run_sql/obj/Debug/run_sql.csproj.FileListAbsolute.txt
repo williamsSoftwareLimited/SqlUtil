@@ -1,0 +1,10 @@
+C:\Users\b037\source\repos\run_sql\run_sql\bin\Debug\run_sql.exe.config
+C:\Users\b037\source\repos\run_sql\run_sql\bin\Debug\run_sql.exe
+C:\Users\b037\source\repos\run_sql\run_sql\bin\Debug\run_sql.pdb
+C:\Users\b037\source\repos\run_sql\run_sql\obj\Debug\run_sql.Form1.resources
+C:\Users\b037\source\repos\run_sql\run_sql\obj\Debug\run_sql.Properties.Resources.resources
+C:\Users\b037\source\repos\run_sql\run_sql\obj\Debug\run_sql.csproj.GenerateResource.cache
+C:\Users\b037\source\repos\run_sql\run_sql\obj\Debug\run_sql.csproj.CoreCompileInputs.cache
+C:\Users\b037\source\repos\run_sql\run_sql\obj\Debug\run_sql.exe
+C:\Users\b037\source\repos\run_sql\run_sql\obj\Debug\run_sql.pdb
+C:\Users\b037\source\repos\run_sql\run_sql\obj\Debug\run_sql.csprojAssemblyReference.cache
