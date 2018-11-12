@@ -1,0 +1,6 @@
+C:\Users\b037\source\repos\run_sql\sqlApi\obj\Debug\sqlApi.csproj.CoreCompileInputs.cache
+C:\Users\b037\source\repos\run_sql\sqlApi\bin\Debug\sqlApi.dll
+C:\Users\b037\source\repos\run_sql\sqlApi\bin\Debug\sqlApi.pdb
+C:\Users\b037\source\repos\run_sql\sqlApi\obj\Debug\sqlApi.dll
+C:\Users\b037\source\repos\run_sql\sqlApi\obj\Debug\sqlApi.pdb
+C:\Users\b037\source\repos\run_sql\sqlApi\obj\Debug\sqlApi.csprojAssemblyReference.cache
