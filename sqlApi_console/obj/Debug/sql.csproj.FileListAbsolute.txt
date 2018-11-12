@@ -1,0 +1,10 @@
+C:\Users\b037\source\repos\run_sql\sqlApi_console\obj\Debug\sql.csproj.CoreCompileInputs.cache
+C:\Users\b037\source\repos\run_sql\sqlApi_console\bin\Debug\sql.exe.config
+C:\Users\b037\source\repos\run_sql\sqlApi_console\bin\Debug\sql.exe
+C:\Users\b037\source\repos\run_sql\sqlApi_console\bin\Debug\sql.pdb
+C:\Users\b037\source\repos\run_sql\sqlApi_console\bin\Debug\sqlApi.dll
+C:\Users\b037\source\repos\run_sql\sqlApi_console\bin\Debug\sqlApi.pdb
+C:\Users\b037\source\repos\run_sql\sqlApi_console\obj\Debug\sql.csprojAssemblyReference.cache
+C:\Users\b037\source\repos\run_sql\sqlApi_console\obj\Debug\sql.csproj.CopyComplete
+C:\Users\b037\source\repos\run_sql\sqlApi_console\obj\Debug\sql.exe
+C:\Users\b037\source\repos\run_sql\sqlApi_console\obj\Debug\sql.pdb

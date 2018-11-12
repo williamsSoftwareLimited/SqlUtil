@@ -1,0 +1,74 @@
+<data>
+  <server>
+    <name>WINDEVAD1051</name>
+    <Db>Darta_DW</Db>
+  </server>
+  <dir>
+    <path>C:\dev\IPSI\GDPR\IPSI\Databases\RegistryDatabase\RegistryDatabase\Seed Data</path>
+    <recursive>False</recursive>
+  </dir>
+  <files>
+    <file>\Sql\SetQuotedIdentifierOn.sql</file>
+    <file>\Sql\SetAnsiNullsOn.sql</file>
+    <file>\Sql\Candidate Selection\CreateSchemaGDPR.sql</file>
+    <file>\Stored Procedures\Anonymisation\CLOAS\CreateSchemaPIM.sql</file>
+    <file>\Sql\Candidate Selection\CLOAS\CreateTableUserCandidateInclExcl.sql</file>
+    <file>\Sql\Candidate Selection\CLOAS\CreateTableCandidate.sql</file>
+    <file>\Sql\Candidate Selection\CLOAS\CreateTableGdprCandidate.sql</file>
+    <file>\Sql\Anonymisation\CLOAS\CreateTableMaskingOffset.sql</file>
+    <file>\Sql\Anonymisation\CLOAS\CreateTableCandidateToAnonymise.sql</file>
+    <file>\Sql\Anonymisation\CLOAS\CreateTableCandidateClient.sql</file>
+    <file>\Sql\Anonymisation\CLOAS\CreateTableCandidateBulkBank.sql</file>
+    <file>\Functions\Anonymisation\fnSumDigits.sql</file>
+    <file>\Functions\Anonymisation\fnMaskWithNumericKey.sql</file>
+    <file>\Functions\Anonymisation\fnMaskWithAlphaKey.sql</file>
+    <file>\Functions\Anonymisation\fnMaskStringDate.sql</file>
+    <file>\Functions\Anonymisation\fnMaskPersonFiscalCode.sql</file>
+    <file>\Functions\Anonymisation\fnMaskFiscalCodeName.sql</file>
+    <file>\Functions\Anonymisation\fnMaskFiscalCode.sql</file>
+    <file>\Functions\Anonymisation\fnMaskDateOfBirth.sql</file>
+    <file>\Functions\Anonymisation\fnMaskCorporateFiscalCode.sql</file>
+    <file>\Functions\Anonymisation\fnMaskAndAppend.sql</file>
+    <file>\Functions\Anonymisation\fnMask.sql</file>
+    <file>\Functions\Anonymisation\fnGetAreaFromFiscalCode.sql</file>
+    <file>\Functions\Anonymisation\fnChangeDuplicateFiscalCode.sql</file>
+    <file>\Functions\Anonymisation\fnChangeDuplicateAccount.sql</file>
+    <file>\Functions\Anonymisation\fnAlphaEquiv.sql</file>
+    <file>\Functions\ConvertMillisecondsToDuration.sql</file>
+    <file>\Stored Procedures\Candidate Selection\CLOAS\Darta\AnonymisationCandidateSelection.sql</file>
+    <file>\Stored Procedures\Candidate Selection\CLOAS\UpdateCLOASAndGdprCandidateIds.sql</file>
+    <file>\Stored Procedures\Candidate Selection\CLOAS\GetCloasIdsForUserCandidateInclExcl_dotNet.sql</file>
+    <file>\Stored Procedures\Candidate Selection\CLOAS\ExtractAnonymisationCandidatesForGDPRRegistry.sql</file>
+    <file>\Stored Procedures\Candidate Selection\CLOAS\DeleteUserCandidateInclExcl.sql</file>
+    <file>\Stored Procedures\Candidate Selection\CLOAS\DeleteCandidateGroupCandidates.sql</file>
+    <file>\Stored Procedures\Candidate Selection\CLOAS\AnonymisationCandidateSelectionReport_dotNetFP.sql</file>
+    <file>\Stored Procedures\Anonymisation\CLOAS\Darta\MaskBB_BankOrBulkPayer.sql</file>
+    <file>\Stored Procedures\Anonymisation\CLOAS\PopulateCandidateToAnonymise.sql</file>
+    <file>\Stored Procedures\Anonymisation\CLOAS\PopulateAnonymisationDependantTables.sql</file>
+    <file>\Stored Procedures\Anonymisation\CLOAS\MaskPW_ArchivedClaim.sql</file>
+    <file>\Stored Procedures\Anonymisation\CLOAS\MaskPI_PhoneticIndex.sql</file>
+    <file>\Stored Procedures\Anonymisation\CLOAS\MaskPC_PendingClaim.sql</file>
+    <file>\Stored Procedures\Anonymisation\CLOAS\MaskOT_OperatorTrail.sql</file>
+    <file>\Stored Procedures\Anonymisation\CLOAS\MaskNT_GeneralPurposeNote.sql</file>
+    <file>\Stored Procedures\Anonymisation\CLOAS\MaskMS_MovementStatistics.sql</file>
+    <file>\Stored Procedures\Anonymisation\CLOAS\MaskME_Memo.sql</file>
+    <file>\Stored Procedures\Anonymisation\CLOAS\MaskLN_LifeName.sql</file>
+    <file>\Stored Procedures\Anonymisation\CLOAS\MaskLC_Location.sql</file>
+    <file>\Stored Procedures\Anonymisation\CLOAS\MaskIO_IncomeInformation.sql</file>
+    <file>\Stored Procedures\Anonymisation\CLOAS\MaskFZ_Fatca.sql</file>
+    <file>\Stored Procedures\Anonymisation\CLOAS\MaskFY_CRS.sql</file>
+    <file>\Stored Procedures\Anonymisation\CLOAS\MaskEP_ExternalPolicy.sql</file>
+    <file>\Stored Procedures\Anonymisation\CLOAS\MaskEL_ExternalReference.sql</file>
+    <file>\Stored Procedures\Anonymisation\CLOAS\MaskCT_Contact.sql</file>
+    <file>\Stored Procedures\Anonymisation\CLOAS\MaskCF_ClientFind.sql</file>
+    <file>\Stored Procedures\Anonymisation\CLOAS\MaskCE_Client.sql</file>
+    <file>\Stored Procedures\Anonymisation\CLOAS\MaskBI_BillingInformation.sql</file>
+    <file>\Stored Procedures\Anonymisation\CLOAS\MaskAG_Agent.sql</file>
+    <file>\Stored Procedures\Anonymisation\CLOAS\MaskAE_AccountingEntry.sql</file>
+    <file>\Stored Procedures\Anonymisation\CLOAS\MaskAC_AgentsCommission.sql</file>
+    <file>\Stored Procedures\Anonymisation\CLOAS\ExtractCLOASAnonymisationResultsForGDPRRegistry.sql</file>
+    <file>\Stored Procedures\Anonymisation\CLOAS\DetermineCloasClient.sql</file>
+    <file>\Stored Procedures\Anonymisation\CLOAS\BP_UpdateMaskFlag.sql</file>
+    <file>\Stored Procedures\Anonymisation\CLOAS\AnonymiseCandidates.sql</file>
+  </files>
+</data>
