@@ -1,6 +1,6 @@
 # SqlUtil
 Sql utilities for SQL server. Run from powershell.
-# location of the api
+# Powershell cmds
 cd C:\Users\duck\source\repos\run_sql\sqlApi_console\bin\Debug
 
 .\sql.exe help
