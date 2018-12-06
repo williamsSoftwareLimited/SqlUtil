@@ -1,4 +1,5 @@
-﻿using System;
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -14,7 +15,7 @@ namespace sqlApi
         public bool Recursive { get { return "True" == _recursive; } }
 
         private string _recursive; // note this can never be changed directly as the tostring returns with the first letter a captital
-        
+        private readonly string FILES_NODE="files";
 
         public dir(string filename) : base(filename)
         {
@@ -53,15 +54,28 @@ namespace sqlApi
                             .Select(p => p.FullName);
             var xdoc = readXmldoc();
             var root = xdoc.FirstChild; // data
-            root["files"].InnerText = string.Empty;
+            var returnFiles = new List<string>();
+
+            // switch --add
+            if(args.Count() == 1 || args[1] != "add")
+                root["files"].InnerText = string.Empty; // this clears all the loaded sql in the XML file
+
+            // get the list of filenames
+            var filenames = getfilenames(FILES_NODE);
 
             files.ToList().ForEach(p =>
             {
-                root["files"].PrependChild(xdoc.CreateElement("file")).InnerText = p.Replace(Dirpath,String.Empty);
+                var filename = p.Replace(Dirpath, String.Empty);
+                if(!exists(filename, filenames)) {
+                    root["files"].PrependChild(xdoc.CreateElement("file")).InnerText = filename;
+                    returnFiles.Add(filename);
+                }
+                filenames.Reset();
             });
             xdoc.Save(_filename);
 
-            return files.ToList();
+            if(returnFiles.Count() == 0) returnFiles.Add("No files were added.");
+            return returnFiles;
         }
 
         public List<string> addSql(string[] args)
@@ -107,17 +121,34 @@ namespace sqlApi
 
         public List<string> listSql()
         {
-            var xdoc = readXmldoc();
-            var root = xdoc.FirstChild; // data
             var loadList = new List<string>();
-
-            var x = root["files"].ChildNodes.GetEnumerator();
+            var x = getfilenames(FILES_NODE);
             while (x.MoveNext())
             {
                 loadList.Add(((XmlElement)x.Current).InnerText);
             }
 
             return loadList;
+        }
+
+        public bool exists(string filename) {
+            return this.exists(filename, getfilenames(FILES_NODE));
+        }
+        public bool exists(string filename, IEnumerator x) {
+            if(filename[0] == '\\') filename = filename.Substring(1);
+
+            while(x.MoveNext()) {
+                string y = ((XmlElement)x.Current).InnerText;
+                if(y[0] == '\\') y = ((XmlElement)x.Current).InnerText.Substring(1);
+                if(filename == y) return true;
+            }
+            return false;
+        }
+
+        private IEnumerator getfilenames(string nodeName) {
+            var xdoc = readXmldoc();
+            var root = xdoc.FirstChild;
+            return root[nodeName].ChildNodes.GetEnumerator();
         }
     }
 }
