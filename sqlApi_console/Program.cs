@@ -1,4 +1,4 @@
-﻿using sqlApi;
+using sqlApi;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -42,7 +42,8 @@ namespace sql
                     setter(args, () => new dir(constantinople.XML_FILEPATH, args[2].ToLowerInvariant()=="true" || args[2].ToLowerInvariant() == "t"));
                     break;
                 case "load":
-                    _dir.loadSql(args).ForEach(p=>Console.WriteLine(p));
+                    _dir.loadSql(args)
+                        .ForEach(p=>Console.WriteLine(p));
                     break;
                 case "add":
                     _dir.addSql(args).ForEach(p => Console.WriteLine(p));
@@ -52,6 +53,13 @@ namespace sql
                     break;
                 case "list":
                     _dir.listSql().ForEach(p => Console.WriteLine(p));
+                    break;
+                case "exists":
+                    if(args.Count() > 1) {
+                        Console.WriteLine("The filename {0} is {1} the current list.", args[1], _dir.exists(args[1]) ? "in" : "NOT in");
+                    } else {
+                        Console.WriteLine("The exists needs one filename argument.");
+                    }
                     break;
                 case "run":
                     runSql runsql = new runSql(_server.connectionString, _dir);
